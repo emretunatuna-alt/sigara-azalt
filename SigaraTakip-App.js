@@ -5,6 +5,11 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+
+const ADMOB_BANNER_ID = __DEV__
+  ? TestIds.BANNER
+  : 'ca-app-pub-5335590674429683/8502521170';
 
 const DAYS = ['Paz','Pzt','Sal','Çar','Per','Cum','Cmt'];
 const MONTHS = ['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'];
@@ -551,6 +556,15 @@ export default function App() {
           </TouchableOpacity>
         </KeyboardAvoidingView>
       </Modal>
+
+      {/* Banner Reklam */}
+      <View style={s.bannerContainer}>
+        <BannerAd
+          unitId={ADMOB_BANNER_ID}
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+          requestOptions={{ requestNonPersonalizedAdsOnly: true }}
+        />
+      </View>
     </SafeAreaView>
   );
 }
@@ -662,4 +676,5 @@ const s = StyleSheet.create({
   saveBtnText: { color:'#fff', fontSize:16, fontWeight:'700' },
   cancelBtn: { borderWidth:1, borderColor:'#b7e4c7', borderRadius:14, padding:13, alignItems:'center' },
   cancelBtnText: { color:'#52796f', fontSize:15 },
+  bannerContainer: { alignItems:'center', backgroundColor:'#f0f7ee', paddingBottom:4 },
 });
