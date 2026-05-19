@@ -4,16 +4,16 @@
     "slug": "sigara-azalt",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./icon.png",
+    "icon": "./icon.png.jpeg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./splash-icon.png",
+      "image": "./icon.png.jpeg",
       "resizeMode": "contain",
       "backgroundColor": "#f0f7ee"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./adaptive-icon.png",
+        "foregroundImage": "./icon.png.jpeg",
         "backgroundColor": "#f0f7ee"
       },
       "package": "com.emretunatuna.sigaraazalt"
@@ -22,7 +22,7 @@
       [
         "expo-notifications",
         {
-          "icon": "./icon.png",
+          "icon": "./icon.png.jpeg",
           "color": "#2d6a4f"
         }
       ]
