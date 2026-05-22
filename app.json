@@ -16,7 +16,9 @@
         "foregroundImage": "./icon.png.jpeg",
         "backgroundColor": "#f0f7ee"
       },
-      "package": "com.emretunatuna.sigaraazalt"
+      "package": "com.emretunatuna.sigaraazalt",
+      "targetSdkVersion": 35,
+      "compileSdkVersion": 35
     },
     "plugins": [
       [
