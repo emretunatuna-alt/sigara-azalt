@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Sigara Azalt",
+    "slug": "sigara-azalt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./icon.png.jpeg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./icon.png.jpeg",
+      "resizeMode": "contain",
+      "backgroundColor": "#f0f7ee"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./icon.png.jpeg",
+        "backgroundColor": "#f0f7ee"
+      },
+      "package": "com.emretunatuna.sigaraazalt",
+      "targetSdkVersion": 35,
+      "compileSdkVersion": 35
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./icon.png.jpeg",
+          "color": "#2d6a4f"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e3b4ca11-66e9-4156-925e-664e20581450"
+      }
+    }
+  }
+}
