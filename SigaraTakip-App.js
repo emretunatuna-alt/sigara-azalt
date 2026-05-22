@@ -5,11 +5,7 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
-import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
 
-const ADMOB_BANNER_ID = __DEV__
-  ? TestIds.BANNER
-  : 'ca-app-pub-5335590674429683/8502521170';
 
 const DAYS = ['Paz','Pzt','Sal','Çar','Per','Cum','Cmt'];
 const MONTHS = ['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'];
