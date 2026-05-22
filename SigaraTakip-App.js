@@ -84,7 +84,6 @@ export default function App() {
   const [data, setData] = useState({});
   const [goals, setGoals] = useState({ daily:20, weekly:100 });
   const [loaded, setLoaded] = useState(false);
-  const [onboardingDone, setOnboardingDone] = useState(true);
   const [entryModal, setEntryModal] = useState(false);
   const [goalModal, setGoalModal] = useState(false);
   const [editModal, setEditModal] = useState(false);
@@ -109,10 +108,8 @@ export default function App() {
       const d = await load('sigara_data', {});
       const g = await load('sigara_goals', { daily:20, weekly:100 });
       const n = await load('notif_enabled', false);
-      const ob = await AsyncStorage.getItem('onboarding_done');
       setData(d); setGoals(g); setGoalInput({ daily:String(g.daily), weekly:String(g.weekly) });
       setNotifEnabled(n);
-      setOnboardingDone(ob === 'true');
       setLoaded(true);
     })();
   }, []);
@@ -273,10 +270,6 @@ export default function App() {
       <Text style={s.loadingEmoji}>🌿</Text>
       <Text style={s.loadingText}>Veriler yükleniyor...</Text>
     </SafeAreaView>
-  );
-
-  if (!onboardingDone) return (
-    <SplashOnboarding onDone={() => setOnboardingDone(true)}/>
   );
 
   return (
