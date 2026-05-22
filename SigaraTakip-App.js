@@ -5,7 +5,6 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Notifications from 'expo-notifications';
-import SplashOnboarding from './SigaraAzalt-Splash';
 
 const DAYS = ['Paz','Pzt','Sal','Çar','Per','Cum','Cmt'];
 const MONTHS = ['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'];
