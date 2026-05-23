@@ -2,7 +2,7 @@
   "expo": {
     "name": "Sigara Azalt",
     "slug": "sigara-azalt",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./icon.png.jpeg",
     "userInterfaceStyle": "light",
@@ -17,7 +17,7 @@
         "backgroundColor": "#f0f7ee"
       },
       "package": "com.emretunatuna.sigaraazalt",
-      "versionCode": 5
+      "versionCode": 7
     },
     "plugins": [
       [
