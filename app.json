@@ -2,7 +2,7 @@
   "expo": {
     "name": "Sigara Azalt",
     "slug": "sigara-azalt",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./icon.png.jpeg",
     "userInterfaceStyle": "light",
