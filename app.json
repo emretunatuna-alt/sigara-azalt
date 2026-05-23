@@ -9,7 +9,7 @@
     "splash": {
       "image": "./icon.png.jpeg",
       "resizeMode": "contain",
-      "backgroundColor": "#f0f7ee"
+      "backgroundColor": "#f0f7ee" 
     },
     "android": {
       "adaptiveIcon": {
